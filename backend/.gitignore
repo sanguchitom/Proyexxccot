@@ -1,0 +1,26 @@
+# Ignorar archivos de configuración locales
+*/settings/local.py
+
+# Ignorar archivos de base de datos SQLite
+/db.sqlite3
+
+# Ignorar archivos de migraciones
+*/migrations/
+
+# Ignorar archivos estáticos recopilados
+staticfiles/
+
+# Ignorar archivos de registro de errores
+*.log
+
+# Ignorar archivos de cache
+__pycache__/
+
+/pycache/
+*.pyc
+/logs/
+/venv/
+/.idea/
+/.vscode/
+/.env
+/.env.dev
