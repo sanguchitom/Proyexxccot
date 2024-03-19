@@ -22,4 +22,4 @@ class ItemWalletViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     permission_classes = [permissions.AllowAny]
-    serializer_class = User
+    serializer_class = UserSerializers

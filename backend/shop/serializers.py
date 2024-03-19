@@ -21,4 +21,5 @@ class ItemWalletSerializers(serializers.ModelSerializer):
 class UserSerializers(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = 'all'
+        fields = ['id','username', 'password', 'email']
+        
