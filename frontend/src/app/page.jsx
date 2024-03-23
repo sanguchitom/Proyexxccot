@@ -1,12 +1,12 @@
-import React from 'react'
-import {Button} from '@nextui-org/react'
+import Image from "next/image";
+import Peneproductor from "./pages/productos/page";
+
+
 
 export default function Home() {
   return (
     <>
-    <div>hola
-      <Button className=''>Nashe</Button>
-    </div>
+    <Peneproductor/>
     </>
-  )
+  );
 }

@@ -8,6 +8,7 @@ class Productos(models.Model):
     prenda = models.CharField(max_length=50)
     descripcion = models.TextField()
     precio = models.DecimalField(max_digits=6, decimal_places=2)
+    img = models.ImageField(blank=True, upload_to='fotos/', max_length=None)
     Creado= models.DateField(auto_now_add=True)
     acutalizado = models.DateField( auto_now=True)
     stock = models.PositiveIntegerField(default=0)
@@ -28,8 +29,3 @@ class ItemWallet(models.Model):
     Products = models.ForeignKey(Productos, on_delete=models.CASCADE)
     cantidad = models.DecimalField( max_digits=5, decimal_places=0, default=1)
     estado_de_compra = models.BooleanField(default=False)
-
-
-    
-
-    
